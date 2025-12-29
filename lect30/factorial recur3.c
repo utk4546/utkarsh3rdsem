@@ -1,11 +1,19 @@
 #include<stdio.h>
-int fact(int a){
-    if (a==0 || a==1){
-    return 1;
-}
-return a*fact(a-1);
+int fact(int n ){
+    if(n==0){
+        return 1
+    }
+    else
+    return n*fact(n-1);
 }
 int main(){
-    int data = fact(5);
-    printf("%d",data);
+    int n;
+    printf("enter the number which of factorial you want ");
+    scanf("%d",&n);
+    printf("Factorial is = %d", fact(n));
+    return 0;
+
+
+}
+   
 }
